@@ -37,7 +37,15 @@ class _SplashScreenState extends State<SplashScreen> {
           color: AppColors.PRIMARY_COLOR,
         ),
         child: Center(
-          child: Text("Recipe App",style: Theme.of(context).textTheme.headline4?.merge(TextStyle(color: AppColors.TEXT_COLOR)),)
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.fastfood_outlined,color: Colors.white,size: 100,),
+              SizedBox(height: 10,),
+              Text("Recipe App",style: Theme.of(context).textTheme.headline4?.merge(TextStyle(color: AppColors.TEXT_COLOR)),),
+            ],
+          )
         )
       ),
     );

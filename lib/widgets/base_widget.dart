@@ -10,6 +10,7 @@ class BaseWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(left: 15,right: 15,top: 5,bottom: 5),

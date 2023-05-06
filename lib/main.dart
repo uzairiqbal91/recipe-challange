@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:recipe_challange/app/app_routes.dart';
 import 'package:recipe_challange/app_resources/app_colors.dart';
@@ -5,7 +6,12 @@ import 'package:recipe_challange/screens/splash_screen.dart';
 
 
 void main() {
-  runApp(const MyApp());
+
+  runApp(DevicePreview(
+
+    builder: (context) => const MyApp(), // Wrap your app
+  ),);
+  // runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
