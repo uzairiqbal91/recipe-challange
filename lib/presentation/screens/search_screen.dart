@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:recipe_challange/widgets/base_widget.dart';
-import 'package:recipe_challange/widgets/recipe_item_widget.dart';
 
-import '../app_resources/app_colors.dart';
-import '../app_resources/app_constants.dart';
+import '../../app_resources/app_colors.dart';
+import '../../app_resources/app_constants.dart';
+import '../widgets/base_widget.dart';
+import '../widgets/recipe_item_widget.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);

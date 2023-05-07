@@ -3,8 +3,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import '../app/app_routes.dart';
-import '../app_resources/app_colors.dart';
+import '../../app/app_routes.dart';
+import '../../app_resources/app_colors.dart';
+
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -18,8 +20,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(Duration(seconds: 4), () {
-
-
 
       Navigator.pushNamedAndRemoveUntil(
           context, AppRoutes.SIGN_IN_SCREEN, (route) => false);

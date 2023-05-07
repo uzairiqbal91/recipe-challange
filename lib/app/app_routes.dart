@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:recipe_challange/screens/login_screen.dart';
-import 'package:recipe_challange/screens/splash_screen.dart';
 
-import '../screens/search_screen.dart';
+import '../presentation/screens/login_screen.dart';
+import '../presentation/screens/search_screen.dart';
+import '../presentation/screens/splash_screen.dart';
+
 
 
 
