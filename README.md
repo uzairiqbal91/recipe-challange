@@ -33,8 +33,13 @@ run command
 
 ## Screenshots
 
-Include screenshots or images related to your recipe application here.
+<img width="938" alt="Screenshot 2023-05-08 at 9 54 01 PM" src="https://user-images.githubusercontent.com/25804523/236893458-da4d8c8e-1806-466b-b742-c5813adb6e29.png">
+<img width="1259" alt="Screenshot 2023-05-08 at 9 53 53 PM" src="https://user-images.githubusercontent.com/25804523/236893475-dc8d2b3a-a657-4400-9778-f67014a49199.png">
+
+I have created 10 food records
 
 ## Demo Video
 
-Insert a demo video of your recipe application in action.
+
+https://user-images.githubusercontent.com/25804523/236893518-fa73c925-3a64-46c8-9d6d-639f55a830b6.mp4
+
