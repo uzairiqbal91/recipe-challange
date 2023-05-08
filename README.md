@@ -40,6 +40,10 @@ I have created 10 food records
 
 ## Demo Video
 
+android
 
 https://user-images.githubusercontent.com/25804523/236893518-fa73c925-3a64-46c8-9d6d-639f55a830b6.mp4
 
+iOS
+
+https://user-images.githubusercontent.com/25804523/236957960-67a3163c-c376-4f95-bde8-3cffccc936e2.mp4
