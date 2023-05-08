@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../presentation/screens/login_screen.dart';
-import '../presentation/screens/search_screen.dart';
-import '../presentation/screens/splash_screen.dart';
+import '../../presentation/screens/login/login_screen.dart';
+import '../../presentation/screens/search/search_screen.dart';
+import '../../presentation/screens/splash_screen.dart';
 
 
 

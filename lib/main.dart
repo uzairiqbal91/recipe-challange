@@ -1,14 +1,14 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:recipe_challange/app/app_routes.dart';
-import 'package:recipe_challange/app_resources/app_colors.dart';
-import 'package:recipe_challange/presentation/cubit/auth/auth_cubit.dart';
-import 'package:recipe_challange/presentation/cubit/credential/credential_cubit.dart';
+import 'package:recipe_challange/core/constants/app_colors.dart';
+import 'package:recipe_challange/core/constants/app_constants.dart';
+import 'package:recipe_challange/presentation/screens/login/login_cubit/login_cubit.dart';
+import 'package:recipe_challange/presentation/screens/search/recipes_cubit/recipe_cubit.dart';
 import 'package:recipe_challange/presentation/screens/splash_screen.dart';
-import 'get_it_injection.dart' as getIt;
+import 'core/di/get_it_injection.dart' as getIt;
+import 'core/navigation/app_routes.dart';
 
 
 void main() async {
@@ -22,11 +22,8 @@ void main() async {
     DeviceOrientation.portraitDown,
   ]);
 
-  runApp(DevicePreview(
 
-    builder: (context) => const MyApp(), // Wrap your app
-  ),);
-  // runApp(const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -37,12 +34,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => getIt.sl<AuthCubit>()),
-        BlocProvider(create: (_) => getIt.sl<CredentialCubit>()),
+        BlocProvider(create: (_) => getIt.sl<LoginCubit>()),
+        BlocProvider(create: (_) => getIt.sl<RecipeCubit>()),
 
       ],
       child: MaterialApp(
-        title: 'Recipe App',
+        title: AppStrings.APP_NAME,
         debugShowCheckedModeBanner: false,
         onGenerateRoute: getAppRoutes().getRoutes,
 

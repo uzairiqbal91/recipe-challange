@@ -2,11 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import '../../app/app_routes.dart';
-import '../../app_resources/app_colors.dart';
-
-
+import '../../core/constants/app_colors.dart';
+import '../../core/constants/app_constants.dart';
+import '../../core/navigation/app_routes.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -23,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
       Navigator.pushNamedAndRemoveUntil(
           context, AppRoutes.SIGN_IN_SCREEN, (route) => false);
-      // Navigator.pushNamedAndRemoveUntil(context, AppRoutes.APP_SIGN_IN, (route) => false);
+
     });
   }
 
@@ -43,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Icon(Icons.fastfood_outlined,color: Colors.white,size: 100,),
               SizedBox(height: 10,),
-              Text("Recipe App",style: Theme.of(context).textTheme.headline4?.merge(TextStyle(color: AppColors.TEXT_COLOR)),),
+              Text(AppStrings.APP_NAME,style: Theme.of(context).textTheme.headline4?.merge(TextStyle(color: AppColors.TEXT_COLOR)),),
             ],
           )
         )

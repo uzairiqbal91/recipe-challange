@@ -8,4 +8,5 @@ class SignInUseCase {
   Future<bool> call(String email , String password) {
     return repository.signInUser(email , password);
   }
+
 }

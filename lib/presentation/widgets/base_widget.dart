@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:recipe_challange/app_resources/app_colors.dart';
+import 'package:recipe_challange/core/constants/app_colors.dart';
 
 class BaseWidget extends StatelessWidget {
 
