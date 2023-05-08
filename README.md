@@ -27,7 +27,7 @@ The application utilizes the following libraries:
 - [cached_network_image](https://pub.dev/packages/cached_network_image): Caching and displaying network images.
 - [fluttertoast](https://pub.dev/packages/fluttertoast): Displaying toast messages in the application.
 - [freezed](https://pub.dev/packages/freezed): Code generation for immutable classes and unions.
-run command 
+run command after installing libraries using Flutter pub get
 - flutter pub run build_runner watch --delete-conflicting-outputs
 
 
