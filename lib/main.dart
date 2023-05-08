@@ -11,12 +11,15 @@ import 'core/di/get_it_injection.dart' as getIt;
 import 'core/navigation/app_routes.dart';
 
 
-void main() async {
 
+
+void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   await getIt.init();
+
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

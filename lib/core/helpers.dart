@@ -16,10 +16,14 @@ class Helpers {
     if (value!.isEmpty) {
       return "Enter email address";
     }
+    else
+      {
+        return !regex.hasMatch(value)
+            ? 'Enter a valid email address'
+            : null;
+      }
 
-    return value!.isNotEmpty && !regex.hasMatch(value)
-        ? 'Enter a valid email address'
-        : null;
+
   }
 
   static String? validatePassword(String? value) {
