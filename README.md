@@ -1,6 +1,6 @@
-# Recipe Application Using Block with Cubit Clean Architecture
+# Recipe Application Using Bloc with Cubit Clean Architecture
 
-This is a recipe application built using the Block with Cubit Clean Architecture. It follows best practices for structuring code and separating concerns.
+This is a recipe application built using the Bloc with Cubit Clean Architecture. It follows best practices for structuring code and separating concerns.
 
 ## Pic and Video Sections
 
